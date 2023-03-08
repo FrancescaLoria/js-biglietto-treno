@@ -9,9 +9,21 @@
 const userKilometres = prompt("Quanti chilometri vuoi percorrere?");
 console.log(userKilometres);
 
-// CHIEDIAMO ALL'UTENTE QUANTI ANNI HA.
-const userAge = prompt("Quanti anni hai?");
-console.log(userAge);
+let userAge = 0;
+
+if (isNaN(userKilometres)) {
+  alert("Non è un numero");
+  location.reload();
+} else {
+  // CHIEDIAMO ALL'UTENTE QUANTI ANNI HA.
+  userAge = prompt("Quanti anni hai?");
+  console.log(userAge);
+}
+
+if (isNaN(userAge)) {
+  alert("Non è un numero");
+  location.reload();
+}
 
 // SULLE BASI DELLA PRIMA DOMANDA CALCOLIAMO IL PREZZO INTERO DEL BIGLIETTO
 const priceForKm = 0.21;
