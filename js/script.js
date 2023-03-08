@@ -19,3 +19,12 @@ const totalPrice = userKilometres * priceForKm;
 console.log(totalPrice);
 
 // SULLA BASE DELL'ETA' DEL NOSTRO UTENTE CALCOLIAMO LO SCONTO
+let discount = 0;
+if (userAge < 18) {
+  discount = 20;
+} else if (userAge > 65) {
+  discount = 40;
+}
+
+const finalPrice = totalPrice - totalPrice * (discount / 100);
+console.log(finalPrice);
