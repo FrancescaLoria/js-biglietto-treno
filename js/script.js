@@ -40,3 +40,6 @@ if (userAge < 18) {
 
 const finalPrice = totalPrice - totalPrice * (discount / 100);
 console.log(finalPrice.toFixed(2));
+document.getElementById(
+  "box"
+).innerHTML = `<h2>Il prezzo del biglietto é ${finalPrice.toFixed(2)}€</h2>`;
