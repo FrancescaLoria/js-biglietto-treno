@@ -27,4 +27,4 @@ if (userAge < 18) {
 }
 
 const finalPrice = totalPrice - totalPrice * (discount / 100);
-console.log(finalPrice);
+console.log(finalPrice.toFixed(2));
